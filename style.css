@@ -1,0 +1,149 @@
+body {
+    font-family: sans-serif;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #D1D5DB;
+    height: 79px;
+}
+
+.header_title {
+    color: #FEFEFE;
+    background-color: #003D6E;
+}
+
+.blue_header_btn {
+    color: #FEFEFE;
+    background-color: #003D6E;
+    border: 1px solid #003D6E;
+    text-decoration: none;
+    padding: 40px 25px 30px 25px;
+    font-size: 16px;
+}   
+
+.header_btn {
+    text-decoration: none;
+    color: #111827;
+    font-size: 16px;
+    padding-right: 40px;
+}
+
+.header-list {  
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-size: 16px;
+    padding-right: 40px;
+}
+
+.giant_text {
+    font-size: 250px;
+    color: #003B77;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 400px;
+}
+
+.title_section {    
+    display: flex;
+    justify-content: center;                                                                                                                
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 718px;
+    margin-top: 136px;
+    position: relative;
+    background-image: url('big_car.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.green_text_first {
+    color: #99FF99;
+    font-size: 60px;
+    position: absolute;
+    top: 115px;
+    left: 970px;
+}
+
+.green_text_second {
+    color: #99FF99;
+    font-size: 60px;
+    position: absolute;
+    top: 189px;
+    left: 1070px;
+}
+
+.white_text {
+    font-size: 60px;
+    color: #F3F3F3;
+    position: absolute;
+    left: 970px;
+    top: 263px;
+}
+
+.title_text {
+    color: #FFFFFF;
+    font-size: 18px;
+    position: absolute;
+    width: 360px;
+    top: 311px;
+    left: 1350px;
+}
+
+.title_btn {
+    color: #FFFFFF;
+    font-size: 18px;
+    position: absolute;
+    top: 441px;
+    left: 1350px;
+}
+
+.title_social_text {
+    position: absolute;
+    bottom: 80px;
+    right: 900px;
+}
+
+.title_social_text a {
+    margin-right: 60px;
+}
+
+.title_social_text :last-child{
+    margin-right: 0;
+}
+
+.title_social_text a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.achievements {
+    margin-top: 30px;
+
+}
+
+.achievements h1 {
+    font-size: 52px;
+    color: #003B77;
+}
+
+.achievements_table {       
+    display: flex;
+
+}
+
+.top_cell {
+    font-size: 22px;
+}
+
+.bottom_cell {
+    font-size: 42px;
+    color: #003B77;
+}

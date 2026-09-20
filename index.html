@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GTHREES</title>
     <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
 </head>
 <body>
     <header>
-        <h1 class = 'header_title'>GTHREES</h1>
+        <img src="Logo.png" class="logo">
         <nav>
-            <select class="header-list">
+            <select class="header-list-option">
                 <option class = 'header_option'>НАШИ УСЛУГИ</option>                
                 <option class = 'header_option'>АВИАПЕРЕВОЗКИ</option>
                 <option class = 'header_option'>АВТОМОБИЛЬНЫЕ ПЕРЕВОЗКИ</option>
@@ -26,12 +27,12 @@
                 <option>EN</option>
             </select>
             <a href = '' class = 'blue_header_btn'>ПОЛУЧИТЬ РАСЧЕТ</a>
-            <img src = ''>
+            <a href="" class="burger"><img src = 'Burger.png'></a>
         </nav>
     </header>
     <main>
         
-        <article class = 'title_section'>
+        <section class = 'title_section'>
             <h1 class = 'giant_text'>GTHREES</h1>      
             <p class="green_text_first">ТРАНСПОРТНО -</p>
             <p class="green_text_second">ЭКСПЕДИЦИОННАЯ</p>
@@ -49,142 +50,99 @@
                 <img src="">
                 <img src="">
             </div>
-        </article>
+        </section>
         
         <section class = 'achievements'>
             <h1 class="subtitle">Наши достижения</h1>
             <div class="achievements_table">
                 <div class="achievement">
                     <p class="top_cell">Частота загрузок</p>
-                    <p class="bottom_cell">61 мин.</p>
+                    <p class="bottom_cell">61 <span>мин.</span></p>
                 </div>
-                <div class="achievement"></div>
+                <div class="achievement">
                     <p class="top_cell">Грузов перевезено</p>
-                    <p class="bottom_cell">287 тыс.</p>
+                    <p class="bottom_cell">287 <span>тыс.</span></p>
                 </div>
-                <div class="achievement"></div>
+                <div class="achievement">
                     <p class="top_cell">Количество партнеров</p>
                     <p class="bottom_cell">3165</p>
                 </div>
-                <div class="achievement"></div>
+                <div class="achievement">
                     <p class="top_cell">Пройденное расстояние</p>
-                    <p class="bottom_cell">42 млн. км</p>
+                    <p class="bottom_cell">42 <span>млн. км</span></p>
                 </div>
             </div>
         </section>
         
-        <article class = 'about_company'>
+        <section class = 'about_company'>
             <h1 class="subtitle">О компании</h1>
-            <p>Наша компания предоставляет широкий спектр услуг по доставке грузов наземным, морским, воздушным транспортом, складской обработке и страхованию грузов.</p>
-            <p>Основываясь на глубоком понимании специфики различных отраслей, мы применяем индивидуальный подход к потребностям наших клиентов в области логистики.</p>
-            <img src=''>
+            <p>Наша компания предоставляет широкий спектр услуг по доставке грузов наземным, морским, воздушным транспортом, складской обработке и страхованию грузов. <br>Основываясь на глубоком понимании специфики различных отраслей, мы применяем индивидуальный подход к потребностям наших клиентов в области логистики.</p>
+            <img src='Full map.png'>
             <a href=''>УЗНАТЬ БОЛЬШЕ</a>
-        </article>
+        </section>
 
-        <h1>GTHREES</h1>
-
-        <article class='our_clients'>
+        <section class='our_clients'>
+            <h1 class="our_clients_giant_text">GTHREES</h1>
             <h1 class="subtitle">Наши услуги</h1>
-            <p>Мы предлагаем высококачественный и эффективный логистический сервис, применяя индивидуальный подход к каждому нашему клиенту.</p>
-            <a href=''>ВСЕ УСЛУГИ</a>
-            <div class = 'client'>
-                <p>Авиаперевозки</p>
+            <p>Мы предлагаем высококачественный и эффективный логистический сервис, применяя индивидуальный подход каждому нашему клиенту.</p>
+            <a href='' class="all_clients">ВСЕ УСЛУГИ</a>
+            <div id = 'slider'>
+                <button type="button" class="arrow arrow_left" aria-label="Предыдущий слайд">&#10094;</button>
+                <button type="button" class="arrow arrow_right" aria-label="Следующий слайд">&#10095;</button>
+                <ul>
+                    <li><img src = 'Card Transportation.png' class="slider_image" alt="Логотип 1"></li>
+                    <li><img src="Card Transportation(1).png" class="slider_image" alt="Логотип 2"></li>
+                    <li><img src="Card Transportation(2).png" class="slider_image" alt="Логотип 3"></li>
+                    <li><img src="Card Transportation(5).png" class="slider_image" alt="Логотип 4"></li>
+                </ul>
             </div>
-            <div class = 'client'>
-                <p>Автомобильные перевозки</p>
-            </div>
-            <div class = 'client'>
-                <p>Железнодорожные перевозки</p>
-            </div>
-            <div class = 'client'>
-                <p>Мультимодальные перевозки</p>
-            </div>
-        </article>
+
+        </section>
         
-        <article class = 'why_we'>
-            <h1 class="subtitle">Почему мы</h1>
-            <div class = 'because'>
-                <p>Гарантии сохранности</p>
-                <img src=''>
-                <p>1</p>
-            </div>
-            <div class = 'because'>
-                <p>Экологические стандарты</p>
-                <img src=''>
-                <p>2</p>
-            </div>
-            <div class = 'because'>
-                <p>Индивидуальный подход</p>
-                <img src=''>
-                <p>4</p>
-            </div>
-            <div class = 'because'>
-                <p>Высокое качество услуг</p>
-                <img src=''>
-                <p>4</p>
-            </div>
-        </article>
-
-        <article class = 'partners'>
-            <h1 class="subtitle">Партнеры</h1>
-            <p>Благодаря тесному сотрудничеству с лучшими транспортными компаниями мы способны предложить качественный и эффективный логистический сервис, применяя индивидуальный подход к клиентам.</p>
-            <a herf=''>Химия</a>
-            <a herf=''>Машиностроение</a>
-            <a herf=''>Металлургия</a>
-            <a herf=''>Фармацевтика</a>
-            <a herf=''>Продукты питания</a>
-            <a herf=''>Строительство</a>
-            <a herf=''>Деревообработка</a>
-            <a herf=''>Одежда</a>
-            <img src=''>
-            <img src="">
-            <img src=''>
-            <img src="">
-            <img src=''>
-            <a href=''>СТАТЬ ПАРТНЕРОМ</a>
-        </article>
-
-        <article class = 'news'>
-            <h1 class="white_subtitle">Новости</h1>
-            <a href=''>Как застрахован груз на международных грузоперевозках</a>
-            <a href=''>Как застрахован груз на международных грузоперевозках</a>
-            <a href=''>Как застрахован груз на международных грузоперевозках</a>
-            <a href=''>Как застрахован груз на международных грузоперевозках</a>
-            <a href=''>ВСЕ УСЛУГИ</a>
-            <img src = "">
-        </article>
-
-        <article class = 'often_aks'>
-            <h1 class="subtitle">Часто спрашивают</h1>
-            <ul>
-                <li>Как застрахован груз на международных грузоперевозках?</li>
-                <li>Как застрахован груз на международных грузоперевозках?</li>
-                <li>Как застрахован груз на международных грузоперевозках?</li>
-                <li>Как застрахован груз на международных грузоперевозках?</li>
-            </ul>
-        </article>
     </main>
-    <input>
-        <h1 class="subtitle">Связаться с нами</h1>
-        <p>Оставьте заявку</p>
-        <p>и наш менеджер свяжется</p>
-        <p>с вами в ближайшее время</p>
-        <input>ФИО</input>
-        <input>Телефон</input>
-        <input>E-mail</input>
-        <select>
-            <option>автопревозки</option>
-        </select>
-        <input>Сообщение</input>
-        <a href="">ОТПРАВИТЬ ЗАЯВКУ</a>
-        <p>Для сотрудничества:</p>
-        <p>info@gthrees.com</p>
-        <a href="">ПОДПИСАТЬСЯ</a>
-        <p>+375(17)252-22-25</p>
-        <p>Отдел продаж:</p>
-        <p>sales@gthrees.com</p>
-        <p>2023, GTHREES</p>
-        <p>Разработано в <img src=""></p>
+    <footer>
+            <h1 class="subtitle">Связаться с нами</h1>
+            <p class="text">Оставьте заявку и наш менеджер свяжется с вами в ближайшее время</p>
+            <div class="form">
+                <div class="name_input">
+                    <label for="">ФИО</label>
+                    <input type="text">
+                </div>
+                <div class="tel_input">
+                    <label for="">Телефон</label>
+                    <input type="text">
+                </div>
+                <div class="mail_input">
+                    <label for="">E-mail</label>
+                    <input type="text">
+                </div>
+                <div class="service_input">
+                    <label for="">Услуга</label>
+                    <select>
+                        <option>автопревозки</option>
+                    </select>
+                </div>
+                <div class="soo_input">
+                    <label for="">Сообщение</label>
+                    <input type="text">
+                </div>
+            </div>
+            <a href="">ОТПРАВИТЬ ЗАЯВКУ</a>
+            
+            <div class="footer_info"> 
+                <p class="cooperation1">Для сотрудничества:</p>
+                <p class="mail1">info@gthrees.com</p>
+                <div class="sub_num">
+                    <a href="" >ПОДПИСАТЬСЯ</a>
+                    <p class="num">+375(17)252-22-25</p>
+                </div>
+                <div class="sales_department">
+                    <p class="cooperation2">Отдел продаж:</p>
+                    <p class="mail2">sales@gthrees.com</p>
+                </div>  
+            </div>
+            <p class="year">© 2023, GTHREES</p>
+            <p class="developed">Разработано в <img src="LikeIt(1).png  "></p>
     </footer>
 </body>
 </html>

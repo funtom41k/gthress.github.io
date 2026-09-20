@@ -1,3 +1,8 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     font-family: sans-serif;
     width: 100%;
@@ -6,14 +11,12 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-around;
     border-bottom: 1px solid #D1D5DB;
     height: 79px;
 }
 
-.header_title {
-    color: #FEFEFE;
-    background-color: #003D6E;
+.logo {
+    margin-left: 30%;
 }
 
 .blue_header_btn {
@@ -21,7 +24,7 @@ header {
     background-color: #003D6E;
     border: 1px solid #003D6E;
     text-decoration: none;
-    padding: 40px 25px 30px 25px;
+    padding: 40px 25px 25px 25px;
     font-size: 16px;
 }   
 
@@ -32,11 +35,26 @@ header {
     padding-right: 40px;
 }
 
+.header-list-option {  
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-size: 16px;
+    width: 142px;
+}
+
 .header-list {  
     background-color: transparent;
     border: 1px solid transparent;
     font-size: 16px;
-    padding-right: 40px;
+}
+
+.header-list-option:first-child  {
+    margin-left: 284px;
+}
+
+.burger {
+    margin-left: 40px;
+    margin-right: 10%;
 }
 
 .giant_text {
@@ -46,7 +64,7 @@ header {
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 400px;
+    bottom: 563px;
 }
 
 .title_section {    
@@ -125,25 +143,330 @@ header {
 }
 
 .achievements {
-    margin-top: 30px;
-
-}
+    margin-top: 140px;
+} 
 
 .achievements h1 {
     font-size: 52px;
     color: #003B77;
+    margin-left: 26.5%;
 }
 
 .achievements_table {       
     display: flex;
-
+    justify-content: center;
+    margin-top: 80px;
 }
 
 .top_cell {
     font-size: 22px;
+    border-bottom   : 1px solid #D1D5DB;
+    padding-bottom: 18px;
 }
 
 .bottom_cell {
-    font-size: 42px;
+    font-size: 80px;
     color: #003B77;
+    margin-top: 18px;
+}
+
+.bottom_cell span {
+    font-size: 42px;
+}
+
+.achievement {
+    margin-right: 21px;
+    width: 349px;
+}
+
+.about_company {
+    margin-top: 120px;
+
+}
+
+.about_company h1 {
+    margin-left: 26.5%;
+    color: #003B77;
+    font-size: 52px;
+}
+
+.about_company img {
+    margin-left: 26.5%;
+}
+
+.about_company p {
+    color: #111827;
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    font-size: 24px;
+    width: 1087px;
+    margin-left: 39%;
+}
+
+.about_company a {
+    color: #003B77;
+    font-size: 18px;
+    margin-top: 40px;
+    display: block;
+    text-align: center;
+    padding-right: 42%;
+}
+
+.our_clients {
+    margin-top: 238px;
+    background-image: url('BG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 999px;
+    color: #FFFFFF;
+    position: relative;
+    padding-top: 4%;
+}
+
+
+.our_clients_giant_text {
+    font-size: 250px;
+    color: #003B77;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 25%;
+    top: -12%;
+}
+
+.our_clients .all_clients {
+    color: white;
+    position: absolute;
+    top: 361px;
+    left: 55%;
+    font-size: 18px;
+}
+
+.our_clients p {
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 125px;
+    width: 1087px;
+    margin-left: 10%;
+}
+
+.our_clients .subtitle {
+    font-size: 52px;
+}
+
+/* .slider_image {
+    width: 472px;
+    height: 349px;
+    display: block;
+    object-fit: cover;
+} */
+
+/* #slider {
+    margin: 50px auto;
+    padding: 20px 40px;
+    position: relative;
+    width: 472px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+#slider ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    transition: 0.3s ease;
+} */
+
+/* #slider ul li {
+    max-width: 472px;
+}
+
+.arrow {
+    color: white;
+    position: absolute;
+    top: 40%;
+    text-decoration: none;
+    background-color: #3d3d3d6d;
+    padding: 8px 10px;
+    z-index: 2;
+    user-select: none; 
+}
+
+.arrow_left {
+    left: 5px;
+}
+
+.arrow_right {
+    right: 5px;
+} */
+
+.slider_image {
+    width: 472px;
+    height: 349px;
+    display: block;
+    object-fit: cover;
+}
+
+#slider {
+    background-color: blue;
+    /* padding: 20px 40px; */
+    position: relative;
+    margin: 50px auto;
+    width: 472px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+#slider {
+    position: relative;
+    overflow: hidden; /* скрывает слайды за пределами видимой области */
+    width: 472px;     /* или любая нужная вам ширина окна слайдера */
+}
+
+#slider ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    transition: transform 0.3s ease; /* плавная анимация перелистывания */
+}
+
+#slider ul li {
+    flex-shrink: 0;
+    width: 472px;
+}
+
+
+.arrow {
+    color: white;
+    position: absolute;
+    top: 40%;
+    text-decoration: none;
+    background-color: #3d3d3d6d;
+    padding: 8px 10px;
+    z-index: 2;
+    user-select: none;
+    
+}
+
+.arrow_left {
+    left: 5px;
+}
+.arrow_right {
+    right: 5px;
+}
+
+footer {
+    padding-left: 25%;
+    padding-top: 140px;
+    position: relative;
+}
+
+footer .subtitle {
+    color: #003B77;
+    font-size: 52px;
+}
+
+footer .text {
+    font-size: 36px;
+    margin-top: 60px;
+    width: 590px;
+    color: #111827;
+}
+
+footer .form {
+    position: absolute;
+    left: 1700px;
+    top: 270px;
+    width: 718px;
+    font-size: 16px;
+}
+
+footer .cooperation1 {
+    margin-top: 352px;
+    font-size: 18px;
+}
+
+footer .mail1 {
+    font-size: 24px; 
+    margin-top: 9px;
+}
+
+footer .sub_num {
+    position: absolute;
+    left: 45%;
+    top: 74%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;   
+}
+
+.sub_num a{
+    font-size: 18px;
+    color: black;
+}
+
+.sub_num .num {
+    font-size: 36px;
+    margin-top: 14px;
+}
+
+footer .sales_department {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    left: 71%;
+    top: 739px;
+}
+
+footer .cooperation2 {
+    font-size: 18px;
+}
+
+footer .mail2 {
+    font-size: 24px; 
+    margin-top: 9px;
+}
+
+.footer_info {
+    border-bottom: #003B77 solid 3px;
+    width: 1660px;
+    padding-bottom: 34px;
+}
+
+.year {
+    margin-top: 42px;
+    font-size: 18px;
+}
+
+.developed {
+    margin-top: 42px;
+    font-size: 16px;
+    position: absolute;
+    left: 71%;
+    top: 93%;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 349px 349px;
+    grid-template-rows: repeat(3, 32px);
+    column-gap: 10px;
+    row-gap: 63px;
+    font-size: 24px;
+    color: #111827;
+}
+
+.form label {
+    font-size: 24px;
+}
+
+footer a {
+    
+    
 }
